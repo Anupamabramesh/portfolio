@@ -1,0 +1,97 @@
+/* src/index.css */
+
+/* ── Tailwind v4 core ── */
+@import "tailwindcss";
+
+/* Tell Tailwind to use your JS config for custom colors/animations */
+@config "./tailwind.config.js";
+
+/* ── Global resets & professional base styles ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 min-h-screen w-full antialiased bg-divine-bg-light dark:bg-divine-bg-dark text-gray-900 dark:text-gray-100;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+#root {
+  @apply min-h-screen w-full;
+}
+
+/* Better typography hierarchy */
+h1, h2, h3, h4 {
+  @apply font-semibold tracking-tight;
+}
+
+h1 {
+  @apply text-5xl sm:text-6xl md:text-7xl leading-tight;
+}
+
+h2 {
+  @apply text-4xl sm:text-5xl leading-tight;
+}
+
+h3 {
+  @apply text-2xl sm:text-3xl;
+}
+
+p {
+  @apply text-lg leading-relaxed text-gray-700 dark:text-gray-300;
+}
+
+/* Links */
+a {
+  @apply font-medium text-divine-accent hover:text-divine-primary transition-colors;
+}
+
+/* ── Professional button style ── */
+.cosmic-btn {
+  @apply inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-divine-primary to-divine-accent/90 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-divine-accent/50 focus:ring-offset-2 transition-all duration-300;
+}
+
+/* Subtle professional glow */
+.glow-text {
+  @apply text-divine-accent drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] transition-colors duration-300;
+}
+
+/* Elegant card hover */
+.card-hover {
+  @apply bg-white dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300;
+}
+
+/* Very subtle aura particles (less distracting) */
+.aura-particle {
+  @apply absolute rounded-full bg-divine-primary/10 blur-2xl animate-aura-pulse pointer-events-none;
+  opacity: 0.25;
+}
+
+/* Container with safe padding */
+.container {
+  @apply w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+}
+
+/* Full-bleed sections (hero, skills, contact backgrounds go edge-to-edge) */
+.full-bleed {
+  @apply relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw];
+}
+
+/* Progress bar base */
+.progress-bar {
+  @apply h-2.5 bg-gray-800/60 rounded-full overflow-hidden border border-gray-700/30;
+}
+
+/* Animated gradient fill */
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-divine-primary via-divine-accent to-divine-primary rounded-full transition-all duration-1000 ease-out;
+  background-size: 200% 200%;
+  animation: gradientFlow 8s ease infinite;
+}
+
+/* Optional subtle animation on load/hover */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
