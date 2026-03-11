@@ -26,7 +26,7 @@ export default function About() {
   ];
 
   const certifications = [
-    "AI Product Intern – XtransMatrix Pvt. Ltd. (Ongoing)",
+    "AI Product Intern – XtransMatrix Pvt. Ltd. ",
     "Kodnest Technologies Pvt. Ltd. Internship (2025–26)",
     "Artificial Intelligence Course – Adverk (2023)",
     "Computer Vision Using Python (2025)",

@@ -58,7 +58,7 @@ export default function Contact() {
     { icon: <FaEnvelope />, text: "anupamabramesh@gmail.com", href: "mailto:anupamabramesh@gmail.com", label: "Email" },
     { icon: <FaGithub />, text: "github.com/Anupamabramesh", href: "https://github.com/Anupamabramesh", label: "GitHub" },
     { icon: <FaLinkedin />, text: "linkedin.com/in/anupama-br-19b31225b", href: "https://linkedin.com/in/anupama-br-19b31225b", label: "LinkedIn" },
-    { icon: <FaMapMarkerAlt />, text: "Sri Siddhartha Institute of Technology, Tumakuru", href: null, label: "Location" },
+    { icon: <FaMapMarkerAlt />, text: "Bangaluru", href: null, label: "Location" },
   ];
 
   return (
