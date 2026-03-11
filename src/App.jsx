@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-divine-bg-light dark:bg-divine-bg-dark text-gray-900 dark:text-gray-100">
+    <div className="relative min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
       {/* Navbar stays fixed at top */}
       <Navbar />
 
@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+

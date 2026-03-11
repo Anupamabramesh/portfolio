@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState('light');
@@ -26,8 +27,13 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme} className="cosmic-btn">
-      {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+    <button 
+      onClick={toggleTheme} 
+      className="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-purple-100 dark:hover:bg-purple-900/30 text-slate-600 dark:text-slate-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300"
+      title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+    >
+      {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
     </button>
   );
 }
+
